@@ -10,6 +10,7 @@ const NavBar: React.FC = () => {
     { name: 'Home', href: '/' },
     { name: 'About', href: '/about' },
     { name: 'Services', href: '/services' },
+    { name: 'Schedule', href: '/schedule' },
     { name: 'Contact', href: '/contact' },
   ];
 
@@ -50,10 +51,10 @@ const NavBar: React.FC = () => {
               </Link>
             ))}
             <Link
-              href="/contact"
+              href="/schedule"
               className="bg-pitts-green text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-green-800 transition-colors"
             >
-              Free Consultation
+              Schedule Now
             </Link>
           </div>
 
@@ -108,11 +109,11 @@ const NavBar: React.FC = () => {
                 </Link>
               ))}
               <Link
-                href="/contact"
+                href="/schedule"
                 className="block bg-pitts-green text-white px-3 py-2 rounded-md text-base font-medium hover:bg-green-800 transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
-                Free Consultation
+                Schedule Now
               </Link>
             </div>
           </div>

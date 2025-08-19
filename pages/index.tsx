@@ -37,10 +37,10 @@ const HomePage: React.FC = () => {
             </p>
             
             <Link
-              href="#contact"
+              href="/schedule"
               className="bg-pitts-gold text-pitts-green px-8 py-4 rounded-lg text-lg font-semibold hover:bg-yellow-400 transition-colors inline-block shadow-lg"
             >
-              Book Your Free Consultation
+              Schedule Your Free Consultation
             </Link>
           </div>
         </div>
