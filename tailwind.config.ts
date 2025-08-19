@@ -18,12 +18,6 @@ const config: Config = {
           'beige': '#faf8f3',
           'white': '#fffef9',
         },
-        'green': {
-          950: '#1a472a',
-        },
-        'yellow': {
-          500: '#d4af37',
-        }
       },
       backgroundColor: {
         'warm': '#fffef9',
