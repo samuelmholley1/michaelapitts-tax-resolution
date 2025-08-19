@@ -29,7 +29,7 @@ const ContactPage: React.FC = () => {
       await new Promise(resolve => setTimeout(resolve, 1000)); // Simulate API call
       setSubmitStatus('success');
       setFormData({ name: '', email: '', phone: '', subject: '', message: '' });
-    } catch (error) {
+    } catch {
       setSubmitStatus('error');
     }
   };
@@ -44,7 +44,7 @@ const ContactPage: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-5xl font-headline font-bold mb-6">
-              Let's Resolve This Together
+              Let&apos;s Resolve This Together
             </h1>
             <p className="text-xl md:text-2xl max-w-3xl mx-auto">
               Ready to resolve your tax problems? Get in touch for your free consultation today.
@@ -165,7 +165,7 @@ const ContactPage: React.FC = () => {
 
                 {submitStatus === 'success' && (
                   <div className="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded">
-                    Thank you! Your message has been sent. We'll get back to you soon.
+                    Thank you! Your message has been sent. We&apos;ll get back to you soon.
                   </div>
                 )}
 

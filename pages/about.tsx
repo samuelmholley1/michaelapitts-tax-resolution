@@ -53,18 +53,18 @@ const AboutPage: React.FC = () => {
                 </p>
                 
                 <p className="text-lg leading-relaxed text-gray-700">
-                  What sets Michaela apart isn't just her expertise—it's her approach. She's helpful, understanding, 
+                  What sets Michaela apart isn&apos;t just her expertise—it&apos;s her approach. She&apos;s helpful, understanding, 
                   experienced, ethical, honest, caring, and brings a sense of humor that makes even the most stressful 
                   tax situations manageable.
                 </p>
                 
                 <div className="bg-white p-6 rounded-lg shadow-md border-l-4 border-pitts-gold">
                   <p className="text-xl font-headline italic text-pitts-green mb-3">
-                    "Big corporations treat you like a number. Michaela treats you like a neighbor."
+                    &ldquo;Big corporations treat you like a number. Michaela treats you like a neighbor.&rdquo;
                   </p>
                   <p className="text-gray-600">
-                    When you work with Pitts Tax Resolution Services, you're not just another case file. 
-                    You're a person with real problems that deserve real solutions.
+                    When you work with Pitts Tax Resolution Services, you&apos;re not just another case file. 
+                    You&apos;re a person with real problems that deserve real solutions.
                   </p>
                 </div>
               </div>
@@ -172,13 +172,11 @@ const AboutPage: React.FC = () => {
           <h2 className="text-3xl font-headline font-bold text-pitts-green mb-6">
             Proudly Serving Mendocino County
           </h2>
-          <p className="text-lg text-gray-700 leading-relaxed mb-8">
-            As a local resident and business owner, Michaela understands the unique challenges facing 
-            individuals and small businesses in our community. She's committed to providing the same 
-            level of service she'd want for her own family and neighbors.
-          </p>
-          
-          <div className="bg-white p-6 rounded-lg shadow-md">
+              <p className="text-lg text-gray-700 leading-relaxed mb-8">
+                As a local resident and business owner, Michaela understands the unique challenges facing 
+                individuals and small businesses in our community. She&apos;s committed to providing the same 
+                level of service she&apos;d want for her own family and neighbors.
+              </p>          <div className="bg-white p-6 rounded-lg shadow-md">
             <p className="text-lg font-medium text-pitts-green mb-2">
               Service Areas Include:
             </p>

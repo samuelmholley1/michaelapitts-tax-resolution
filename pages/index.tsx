@@ -1,6 +1,7 @@
 import React from 'react';
 import Layout from '../components/Layout';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const HomePage: React.FC = () => {
   return (
@@ -27,7 +28,7 @@ const HomePage: React.FC = () => {
                 Pitts Tax Resolution Services
               </h1>
               <p className="text-2xl md:text-3xl font-headline italic text-pitts-gold mb-6">
-                "Tax problems are the Pitts. We can help."
+                &ldquo;Tax problems are the Pitts. We can help.&rdquo;
               </p>
             </div>
             
@@ -77,7 +78,7 @@ const HomePage: React.FC = () => {
                 
                 <div className="bg-white p-6 rounded-lg shadow-md border-l-4 border-pitts-gold">
                   <p className="text-lg font-medium text-pitts-green italic">
-                    "Big corporations treat you like a number. Michaela treats you like a neighbor."
+                    &ldquo;Big corporations treat you like a number. Michaela treats you like a neighbor.&rdquo;
                   </p>
                 </div>
               </div>
