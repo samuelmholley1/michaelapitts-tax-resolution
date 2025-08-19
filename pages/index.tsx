@@ -24,7 +24,7 @@ const HomePage: React.FC = () => {
                   e.currentTarget.style.display = 'none';
                 }}
               />
-              <h1 className="text-4xl md:text-6xl font-headline font-bold mb-4">
+              <h1 className="text-4xl md:text-6xl font-headline font-bold mb-4 text-pitts-gold">
                 Pitts Tax Resolution Services
               </h1>
               <p className="text-2xl md:text-3xl font-headline italic text-pitts-gold mb-6">
@@ -238,7 +238,7 @@ const HomePage: React.FC = () => {
       </section>
 
       {/* Simple Contact Form */}
-      <section className="py-16 bg-section-pattern">
+      <section className="py-16 bg-gradient-to-b from-pitts-beige to-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-white rounded-lg shadow-lg p-8">
             <h3 className="text-2xl font-headline font-bold text-pitts-green mb-6 text-center">

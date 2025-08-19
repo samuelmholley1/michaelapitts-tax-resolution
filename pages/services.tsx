@@ -9,10 +9,10 @@ const ServicesPage: React.FC = () => {
       description="Comprehensive tax resolution services including IRS debt relief, unfiled returns, tax planning, and IRS representation. Serving Mendocino County and Sonoma County."
     >
       {/* Hero Section */}
-      <section className="bg-hero-pattern text-white py-16">
+      <section className="bg-gradient-to-br from-pitts-green to-green-800 text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h1 className="text-4xl md:text-5xl font-headline font-bold mb-6">
+            <h1 className="text-4xl md:text-5xl font-headline font-bold mb-6 text-pitts-gold">
               Tax Resolution Services
             </h1>
             <p className="text-xl md:text-2xl max-w-3xl mx-auto">

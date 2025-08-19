@@ -9,10 +9,10 @@ const AboutPage: React.FC = () => {
       description="Meet Michaela Pitts, Licensed Enrolled Agent since 2006 with 18 years of experience in tax resolution. Personal, ethical service for Mendocino County."
     >
       {/* Hero Section */}
-      <section className="bg-hero-pattern text-white py-16">
+      <section className="bg-gradient-to-br from-pitts-green to-green-800 text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h1 className="text-4xl md:text-5xl font-headline font-bold mb-6">
+            <h1 className="text-4xl md:text-5xl font-headline font-bold mb-6 text-pitts-gold">
               Meet Michaela Pitts
             </h1>
             <p className="text-xl md:text-2xl max-w-3xl mx-auto">
@@ -23,7 +23,7 @@ const AboutPage: React.FC = () => {
       </section>
 
       {/* Main Content */}
-      <section className="py-16 bg-section-pattern">
+      <section className="py-16 bg-gradient-to-b from-pitts-beige to-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Photo placeholder */}
