@@ -10,7 +10,7 @@ const HomePage: React.FC = () => {
       description="Tax problems are the Pitts. We can help. Personal, ethical tax resolution for Mendocino County. Licensed Enrolled Agent with 18 years of experience."
     >
       {/* Hero Section */}
-      <section className="bg-hero-pattern text-white py-20">
+      <section className="bg-gradient-to-br from-pitts-green to-green-800 text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             {/* Logo and Company Name */}
@@ -18,7 +18,7 @@ const HomePage: React.FC = () => {
               <img 
                 src="/logo.png" 
                 alt="Pitts Tax Resolution Services Logo - Black hole with green and gold dollar sign labyrinth" 
-                className="h-24 w-auto mx-auto mb-4"
+                className="h-16 w-auto mx-auto mb-4"
                 onError={(e) => {
                   // Fallback if logo doesn't exist yet
                   e.currentTarget.style.display = 'none';
@@ -47,7 +47,7 @@ const HomePage: React.FC = () => {
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-16 bg-section-pattern">
+      <section id="about" className="py-16 bg-gradient-to-b from-pitts-beige to-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-headline font-bold text-pitts-green mb-6">
