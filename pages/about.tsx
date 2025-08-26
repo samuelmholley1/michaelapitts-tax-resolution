@@ -26,16 +26,17 @@ const AboutPage: React.FC = () => {
       <section className="py-16 bg-gradient-to-b from-pitts-beige to-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            {/* Photo placeholder */}
+            {/* Professional photo */}
             <div className="order-2 lg:order-1">
-              <div className="bg-pitts-beige h-96 rounded-lg flex items-center justify-center shadow-lg border-4 border-white">
-                <div className="text-center">
-                  <div className="text-pitts-green mb-4">
-                    <svg className="mx-auto h-16 w-16" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-                    </svg>
-                  </div>
-                  <span className="text-pitts-green font-medium">Professional Photo of Michaela Pitts</span>
+              <div className="relative h-96 rounded-lg shadow-lg border-4 border-pitts-gold overflow-hidden">
+                <img 
+                  src="/Mikey_coast_headshot.jpg" 
+                  alt="Michaela Pitts - Licensed Enrolled Agent and Tax Resolution Specialist"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-pitts-green via-pitts-green/80 to-transparent p-4">
+                  <h3 className="text-xl font-headline font-bold text-white mb-1">Michaela Pitts</h3>
+                  <p className="text-pitts-gold font-medium">Licensed Enrolled Agent</p>
                 </div>
               </div>
             </div>
@@ -183,6 +184,54 @@ const AboutPage: React.FC = () => {
             <p className="text-gray-600">
               Mendocino County • Sonoma County • Remote consultations available
             </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Personal Touch Section */}
+      <section className="py-16 bg-gradient-to-b from-white to-pitts-beige">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            
+            {/* Content */}
+            <div>
+              <h2 className="text-3xl font-headline font-bold text-pitts-green mb-6">
+                More Than Just Your Tax Professional
+              </h2>
+              
+              <div className="space-y-4">
+                <p className="text-lg leading-relaxed text-gray-700">
+                  When you work with Pitts Tax Resolution, you're not just getting a licensed professional—you're 
+                  getting someone who truly understands what it's like to face financial challenges and come through stronger.
+                </p>
+                
+                <p className="text-lg leading-relaxed text-gray-700">
+                  Michaela and her wife Kay have built their life here in Northern California, and they understand 
+                  the importance of family, community, and having someone in your corner when times get tough.
+                </p>
+                
+                <p className="text-lg leading-relaxed text-gray-700">
+                  This personal approach means you'll always get honest advice, clear communication, and the kind 
+                  of dedicated service that comes from someone who genuinely cares about your success.
+                </p>
+              </div>
+            </div>
+            
+            {/* Photo */}
+            <div>
+              <div className="relative rounded-lg shadow-lg overflow-hidden border-4 border-pitts-gold">
+                <img 
+                  src="/Mikey_Kay_pinkflowers.jpg" 
+                  alt="Michaela and Kay - Building community connections in Northern California"
+                  className="w-full h-80 object-cover"
+                />
+                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
+                  <p className="text-white font-medium">Michaela & Kay</p>
+                  <p className="text-pitts-gold text-sm">Building community connections in Northern California</p>
+                </div>
+              </div>
+            </div>
+            
           </div>
         </div>
       </section>

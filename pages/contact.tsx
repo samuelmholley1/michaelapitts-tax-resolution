@@ -24,9 +24,24 @@ const ContactPage: React.FC = () => {
     setSubmitStatus('sending');
 
     try {
-      // TODO: Implement actual form submission logic
-      // This is a placeholder for the form submission
-      await new Promise(resolve => setTimeout(resolve, 1000)); // Simulate API call
+      // Create email content
+      const subject = `Tax Resolution Inquiry: ${formData.subject}`;
+      const body = `
+Name: ${formData.name}
+Email: ${formData.email}
+Phone: ${formData.phone || 'Not provided'}
+Type of Tax Issue: ${formData.subject}
+
+Message:
+${formData.message}
+      `.trim();
+
+      // Create mailto link
+      const mailtoLink = `mailto:pitts.mikey8@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      
+      // Open default email client
+      window.location.href = mailtoLink;
+      
       setSubmitStatus('success');
       setFormData({ name: '', email: '', phone: '', subject: '', message: '' });
     } catch {

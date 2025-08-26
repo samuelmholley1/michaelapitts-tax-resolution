@@ -1,6 +1,7 @@
 import React from 'react';
 import Layout from '../components/Layout';
 import Link from 'next/link';
+import CalendlyEmbed from '../components/CalendlyEmbed';
 import Image from 'next/image';
 
 const HomePage: React.FC = () => {
@@ -12,36 +13,59 @@ const HomePage: React.FC = () => {
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-pitts-green to-green-800 text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
-            {/* Logo and Company Name */}
-            <div className="mb-8">
-              <img 
-                src="/logo.png" 
-                alt="Pitts Tax Resolution Services Logo - Black hole with green and gold dollar sign labyrinth" 
-                className="h-16 w-auto mx-auto mb-4"
-                onError={(e) => {
-                  // Fallback if logo doesn't exist yet
-                  e.currentTarget.style.display = 'none';
-                }}
-              />
-              <h1 className="text-4xl md:text-6xl font-headline font-bold mb-4 text-pitts-gold">
-                Pitts Tax Resolution Services
-              </h1>
-              <p className="text-2xl md:text-3xl font-headline italic text-pitts-gold mb-6">
-                &ldquo;Tax problems are the Pitts. We can help.&rdquo;
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            
+            {/* Main Content */}
+            <div className="text-center lg:text-left order-2 lg:order-1">
+              {/* Logo placeholder for future */}
+              <div className="mb-8">
+                <img 
+                  src="/logo.png" 
+                  alt="Pitts Tax Resolution Services Logo" 
+                  className="h-16 w-auto mx-auto lg:mx-0 mb-4"
+                  onError={(e) => {
+                    // Fallback if logo doesn't exist yet
+                    e.currentTarget.style.display = 'none';
+                  }}
+                />
+                <h1 className="text-4xl md:text-6xl font-headline font-bold mb-4 text-pitts-gold">
+                  Pitts Tax Resolution Services
+                </h1>
+                <p className="text-2xl md:text-3xl font-headline italic text-pitts-gold mb-6">
+                  &ldquo;Tax problems are the Pitts. We can help.&rdquo;
+                </p>
+              </div>
+              
+              <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto lg:mx-0">
+                Personal, ethical tax resolution for Mendocino County.
               </p>
+              
+              <Link
+                href="/schedule"
+                className="bg-pitts-gold text-pitts-green px-8 py-4 rounded-lg text-lg font-semibold hover:bg-yellow-400 transition-colors inline-block shadow-lg"
+              >
+                Schedule Your Free Consultation
+              </Link>
             </div>
             
-            <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
-              Personal, ethical tax resolution for Mendocino County.
-            </p>
+            {/* Professional Photo */}
+            <div className="order-1 lg:order-2">
+              <div className="relative max-w-md mx-auto">
+                <div className="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-pitts-gold">
+                  <img 
+                    src="/Mikey_coast_headshot.jpg" 
+                    alt="Michaela Pitts - Licensed Enrolled Agent and Tax Resolution Specialist"
+                    className="w-full h-80 sm:h-96 object-cover"
+                  />
+                  <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-pitts-green via-pitts-green/90 to-transparent p-6">
+                    <h3 className="text-xl font-headline font-bold text-white mb-1">Michaela Pitts</h3>
+                    <p className="text-pitts-gold font-medium mb-1">Licensed Enrolled Agent</p>
+                    <p className="text-white text-sm opacity-90">18 years of experience</p>
+                  </div>
+                </div>
+              </div>
+            </div>
             
-            <Link
-              href="/schedule"
-              className="bg-pitts-gold text-pitts-green px-8 py-4 rounded-lg text-lg font-semibold hover:bg-yellow-400 transition-colors inline-block shadow-lg"
-            >
-              Schedule Your Free Consultation
-            </Link>
           </div>
         </div>
       </section>
@@ -177,6 +201,56 @@ const HomePage: React.FC = () => {
         </div>
       </section>
 
+      {/* Trust & Community Section */}
+      <section className="py-16 bg-gradient-to-b from-white to-pitts-beige">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            
+            {/* Photo */}
+            <div>
+              <div className="relative rounded-lg shadow-lg overflow-hidden border-4 border-pitts-gold">
+                <img 
+                  src="/Mikey_Kay_pinkflowers.jpg" 
+                  alt="Michaela and Kay - Trusted members of the Northern California community"
+                  className="w-full h-80 object-cover"
+                />
+                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
+                  <p className="text-white font-medium">Deep roots in Northern California</p>
+                </div>
+              </div>
+            </div>
+            
+            {/* Content */}
+            <div>
+              <h2 className="text-3xl font-headline font-bold text-pitts-green mb-6">
+                Your Neighbors, Your Advocates
+              </h2>
+              
+              <div className="space-y-4">
+                <p className="text-lg leading-relaxed text-gray-700">
+                  Michaela and Kay aren't just tax professionals—they're your neighbors, deeply rooted 
+                  in the Northern California community they serve.
+                </p>
+                
+                <p className="text-lg leading-relaxed text-gray-700">
+                  This isn't about churning through cases or maximizing profits. It's about taking care 
+                  of people in our community who need help navigating complex tax situations.
+                </p>
+                
+                <div className="bg-pitts-green/10 p-6 rounded-lg border-l-4 border-pitts-green">
+                  <p className="text-lg font-medium text-pitts-green mb-2">Our Promise to You:</p>
+                  <p className="text-gray-700">
+                    Honest communication, fair pricing, and the kind of personal attention you'd expect 
+                    from someone who genuinely cares about your success and peace of mind.
+                  </p>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </section>
+
       {/* Contact & Calendly Section */}
       <section id="contact" className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -189,23 +263,19 @@ const HomePage: React.FC = () => {
             </p>
           </div>
           
-          {/* Calendly Embed Placeholder */}
+          {/* Calendly Embed */}
           <div className="bg-pitts-beige rounded-lg shadow-lg p-8 mb-12">
-            <div className="bg-white h-96 rounded-lg flex items-center justify-center border-2 border-dashed border-pitts-green">
-              <div className="text-center">
-                <div className="text-pitts-green mb-4">
-                  <svg className="mx-auto h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                  </svg>
-                </div>
-                <p className="text-pitts-green text-lg font-medium">
-                  Calendly Scheduling Widget
-                </p>
-                <p className="text-gray-600 text-sm mt-2">
-                  Free consultation booking will be embedded here
-                </p>
-              </div>
-            </div>
+            <CalendlyEmbed 
+              calendlyUrl="https://calendly.com/pitts-mikey8/free-consultation"
+              brandColors={{
+                primary: "#1a472a",
+                secondary: "#d4af37"
+              }}
+              businessName="Pitts Tax Resolution Services"
+              headerTitle="Book Your Free Tax Consultation"
+              headerSubtext="Choose a time that works for you below."
+              credibilityText="Licensed Enrolled Agent since 2006 • 18 years of experience"
+            />
           </div>
           
           {/* Contact Information */}

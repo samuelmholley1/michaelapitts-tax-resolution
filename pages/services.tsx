@@ -252,10 +252,64 @@ const ServicesPage: React.FC = () => {
         </div>
       </section>
 
+      {/* Professional Credibility Section */}
+      <section className="py-16 bg-gradient-to-b from-pitts-beige to-white">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            
+            {/* Content */}
+            <div>
+              <h2 className="text-3xl font-headline font-bold text-pitts-green mb-6">
+                Experience You Can Trust
+              </h2>
+              
+              <div className="space-y-4">
+                <p className="text-lg leading-relaxed text-gray-700">
+                  With 18 years of experience as a Licensed Enrolled Agent, Michaela has the expertise 
+                  and credentials to represent you before the IRS and state tax authorities.
+                </p>
+                
+                <div className="bg-white p-6 rounded-lg shadow-md border-l-4 border-pitts-green">
+                  <h3 className="text-lg font-semibold text-pitts-green mb-3">What This Means for You:</h3>
+                  <ul className="space-y-2 text-gray-700">
+                    <li>• Authorized to represent you in all tax matters</li>
+                    <li>• Direct communication with IRS on your behalf</li>
+                    <li>• Deep understanding of tax law and resolution options</li>
+                    <li>• Proven track record of successful outcomes</li>
+                  </ul>
+                </div>
+                
+                <p className="text-lg leading-relaxed text-gray-700">
+                  When you work with Pitts Tax Resolution, you're getting more than just filing services—you're 
+                  getting a dedicated advocate who understands the system and fights for your best interests.
+                </p>
+              </div>
+            </div>
+            
+            {/* Photo */}
+            <div>
+              <div className="relative rounded-lg shadow-lg overflow-hidden border-4 border-pitts-gold">
+                <img 
+                  src="/Mikey_coast_headshot.jpg" 
+                  alt="Michaela Pitts - Licensed Enrolled Agent with 18 years of experience"
+                  className="w-full h-96 object-cover"
+                />
+                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-pitts-green via-pitts-green/90 to-transparent p-6">
+                  <h3 className="text-xl font-headline font-bold text-white mb-1">Michaela Pitts, EA</h3>
+                  <p className="text-pitts-gold font-medium mb-1">Licensed Enrolled Agent</p>
+                  <p className="text-white text-sm opacity-90">18 years of tax resolution experience</p>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
-      <section className="py-16 bg-blue-900 text-white">
+      <section className="py-16 bg-pitts-green text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-bold mb-4">
+          <h2 className="text-3xl font-headline font-bold mb-4">
             Ready to Resolve Your Tax Problems?
           </h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto">
@@ -263,7 +317,7 @@ const ServicesPage: React.FC = () => {
           </p>
           <Link
             href="/contact"
-            className="bg-white text-blue-900 px-8 py-3 rounded-lg text-lg font-semibold hover:bg-gray-100 transition-colors inline-block"
+            className="bg-pitts-gold text-pitts-green px-8 py-3 rounded-lg text-lg font-semibold hover:bg-yellow-400 transition-colors inline-block"
           >
             Get Your Free Consultation
           </Link>
