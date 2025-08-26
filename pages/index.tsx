@@ -1,7 +1,6 @@
 import React from 'react';
 import Layout from '../components/Layout';
 import Link from 'next/link';
-import CalendlyEmbed from '../components/CalendlyEmbed';
 import Image from 'next/image';
 
 const HomePage: React.FC = () => {
@@ -263,19 +262,31 @@ const HomePage: React.FC = () => {
             </p>
           </div>
           
-          {/* Calendly Embed */}
-          <div className="bg-pitts-beige rounded-lg shadow-lg p-8 mb-12">
-            <CalendlyEmbed 
-              calendlyUrl="https://calendly.com/pitts-mikey8/free-consultation"
-              brandColors={{
-                primary: "#1a472a",
-                secondary: "#d4af37"
-              }}
-              businessName="Pitts Tax Resolution Services"
-              headerTitle="Book Your Free Tax Consultation"
-              headerSubtext="Choose a time that works for you below."
-              credibilityText="Licensed Enrolled Agent since 2006 • 18 years of experience"
-            />
+          {/* Schedule CTA */}
+          <div className="bg-gradient-to-br from-pitts-green to-green-800 rounded-lg shadow-lg p-12 mb-12 text-center text-white">
+            <div className="max-w-3xl mx-auto">
+              <h3 className="text-3xl font-headline font-bold mb-4 text-pitts-gold">
+                Ready to Get Started?
+              </h3>
+              <p className="text-xl mb-8 opacity-90">
+                Book your free consultation today and take the first step toward resolving your tax problems. 
+                No obligation, just honest advice from a licensed professional.
+              </p>
+              <div className="space-y-4 sm:space-y-0 sm:space-x-4 sm:flex sm:justify-center">
+                <Link
+                  href="/schedule"
+                  className="bg-pitts-gold text-pitts-green px-8 py-4 rounded-lg text-lg font-semibold hover:bg-yellow-400 transition-colors inline-block shadow-lg"
+                >
+                  Schedule Free Consultation
+                </Link>
+                <Link
+                  href="/contact"
+                  className="border-2 border-pitts-gold text-pitts-gold px-8 py-4 rounded-lg text-lg font-semibold hover:bg-pitts-gold hover:text-pitts-green transition-colors inline-block"
+                >
+                  Contact Us
+                </Link>
+              </div>
+            </div>
           </div>
           
           {/* Contact Information */}
